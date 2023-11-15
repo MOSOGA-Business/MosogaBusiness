@@ -1,0 +1,306 @@
+<!DOCTYPE strict>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Nosso Produto</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="Logo.jpeg">
+    <script src="lerPagina.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <style>
+    * {
+          margin:0;
+          padding:0
+      }
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(90deg, #ffffff, #cccccc, #333333);
+     }
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, font, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, tudo {
+           margin: 0; padding: 0; border: 0; outline: 0;
+           font-size: 100%; vertical-align: baseline;
+         
+      }
+      body {line-height: 1;}
+      ol, ul {list-style: none;}
+      blockquote, q {quotes: none;}
+      :focus {outline: 0;}
+      ins {text-decoration: none;}
+      del {text-decoration: line-through;}
+      table {
+           border-collapse: collapse;
+           border-spacing: 0;
+      }
+     
+     nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        align-items: center;
+        padding: 16px 0;
+     }
+     
+     nav a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s ease;
+        padding: 10px 20px;
+        font-weight: bold;
+        font-style: italic;
+     }
+     
+     nav a:hover {
+        color: whitesmoke;
+     }
+     #readButton {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+     }
+     
+     #readButton:hover {
+        background-color: #45a049;
+     }
+     
+     .container {
+        width: 80%;
+        margin: 0 auto;
+     }
+     
+     .swiper-container {
+        width: 100%;
+        overflow: hidden;
+     }
+     
+     .swiper-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+     }
+     
+     .swiper-slide {
+        width: 50%;
+        box-sizing: border-box;
+        transition: transform 0.5s ease-in-out;
+     }
+     
+     .slide-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Mantém a altura da imagem */
+     }
+     
+     .swiper-slide img {
+        width: 500px;
+        height: auto; /* Adicione esta linha para manter a proporção da imagem */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 10px;
+     }
+     
+     .selecao1 {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 500px;
+        margin: 10px auto 5px 175px;
+        /* Remova a margem esquerda específica para este elemento */
+        
+     }
+     
+     
+     .selecao1 h2 {
+        text-decoration: underline;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 3vh;
+     }
+     .flex-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px; /* Adicione um espaçamento entre as seções */
+     }
+     
+     .selecao2 {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 500px;
+        margin: 5px auto 10px;
+        /* Remova a margem direita específica para este elemento */
+        margin-right: 222px;
+        margin-top: 10px;
+     }
+     .selecao2 h2{
+        text-decoration: underline;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 3vh;
+     
+     }
+     .selecao2 img{
+        width: 500px;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+     }
+     .selecao2 p{
+        margin-bottom: 46px
+     }
+     .selecao3{
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 500px;
+        height: 758px;
+        margin: 10px auto 5px 175px;
+     }
+     .selecao3 img{
+        width: 435px;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+     }
+     .selecao3 h2{
+        text-decoration: underline;
+        font-weight: bold;
+     }
+     .promocao {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 492px;
+        margin: -803px auto 5px; /* Ajuste aqui: aumente o margin-top para posicionar abaixo da .selecao2 */
+        margin-right: 223px;
+        }
+         
+        
+     .promocao img {
+        width: 435px;
+        height: 754px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+     }
+     
+     
+     
+     .swiper-pagination {
+        position: static;
+        bottom: 10px;
+     }
+     :root{
+        --swiper-theme-color:black
+     }
+     </style>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                <li><a href="Nosso-Produto.html">NOSSO PRODUTO</a></li>
+                <li><a href="Contato.html">CONTATO</a></li>
+                </ul>
+                <button id="readButton" onclick="toggleRead()">Ler Página</button>
+            </nav>
+        </header>
+
+        <div class="flex-container">
+            <div class="section1">
+                <section class="selecao1">
+                    <h2>Performance da Pia Ecológica</h2>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <img src="Performance1.png" alt="Performance 1 - Descrição breve">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <img src="Performance2.png" alt="Performance 2 - Descrição breve">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination" aria-label="Pagination"></div>
+                    </div>
+                    <p>Nossa pia reutiliza a água da pia para o vaso sanitário, garantindo uma utilização eficiente. A água utilizada no vaso retorna totalmente limpa, passando pelo ralo especial na pia e um filtro próprio no vaso sanitário.</p>
+                </section>
+            </div>
+
+            <div class="section2">
+                <section class="selecao2">
+                    <h2>Internamente de sua residência</h2>
+                    <img src="Internamento.png" alt="Imagem demonstrativa do uso em residência">
+                    <p>Nossas pias se instalam em qualquer tipo de residência, desde apartamentos até casas. Acima há uma demonstração de um projeto de instalação feito em uma casa.</p>
+                </section>
+            </div>
+        </div>
+        
+        <div class="section3">
+            <section class="selecao3">
+                <h2>Compra opcional do ralo</h2>
+                <p>O nosso ralo tem como diferencial possuir uma estrutura de filtragem para retirar todas as impurezas da água para que ela possa ser reutilizada de forma que não prejudique quem a utilizar. Além disso, possui tamanho único, porém ajustável para qualquer tipo de pia, até mesmo para pias não advindas da nossa empresa.</p>
+                <img src="opcional do ralo.jpg" alt="Imagem do ralo opcional">
+                <p>ATENÇÃO: Somente comprar o ralo não terá o mesmo efeito quanto a retirada completa das impurezas vindas das águas, pois o diferencial é todo o sistema de limpeza que os nossos produtos juntos possuem. Tanto a torneira da pia, quanto o ralo e o próprio vaso sanitário possuem filtros que insificam a limpeza da água.</p>
+            </section>
+        </div>
+        
+        <div class="promocao">
+            <img src="Promoção.jpeg" alt="Imagem de promoção">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    ariaLabel: 'Pagination'
+                },
+            });
+        });
+    </script>
+</body>
+</html>

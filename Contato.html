@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Mosoga Business</title>
+    <link rel="stylesheet" href="Contato.css">
+    <link rel="shortcut icon" type="image/png" href="Logo.jpeg">
+    <script src="lerPagina.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                <li><a href="Nosso-Produto.html">NOSSO PRODUTO</a></li>
+                <li><a href="Contato.html">CONTATO</a></li>
+                </ul>
+                <button id="readButton" onclick="toggleRead()">Ler Página</button>
+            </nav>
+        </header>
+
+        <div class="contact-section">
+            <div class="contact-info">
+                <h2>SIGA-ME</h2>
+                <a href="https://instagram.com/mosoga_business._?igshid=MzRlODBiNWFlZA==" target="_blank"
+                    rel="noopener noreferrer" aria-label="Siga Mosoga Business no Instagram">
+                    <img class="instagram-icon" src="instagram.png" alt="Instagram Icon">
+                </a>
+                <footer>@2023 Política de privacidade</footer>
+            </div>
+
+            <div class="contact-form">
+                <h2>Formulário de Contato</h2>
+                <form action="/enviar-contato" method="post">
+                    <input type="text" id="name" name="name" required placeholder="Digite Seu nome completo"
+                        aria-label="Nome completo">
+
+                    <input type="email" id="email" name="email" required placeholder="Digite Seu e-mail"
+                        aria-label="Endereço de e-mail">
+
+                    <textarea id="message" name="message" required placeholder="Escreva sua dúvida"
+                        aria-label="Mensagem"></textarea>
+
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
